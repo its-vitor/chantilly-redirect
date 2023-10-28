@@ -13,23 +13,13 @@
 <body>
     <div id="label-redirect">
         <h2><b>Chantilly</b></h2>
-        <div id="label-button">
-            <h3>Para acessar a comunidade, insira <br>o seu link e clique no botão<br> de redirecionamento.</h3>
-            <input type="text" placeholder="Insira seu link" id="link-input" required>
-            <button onclick="checkAndRedirect()" id="button-redirect"><i class="fa-solid fa-link"></i> Redirecione-se à Chantilly</button>
-        </div>
+        <form id="label-button">
+            <h3>Clique em um dos links abaixo <br> para entrar na comunidade.</h3>
+            <!-- Os links serão inseridos aqui -->
+        </form>
         <img id="img-source" src="imgs/amino.png" alt="">
     </div>
 
-    <script>
-        function checkAndRedirect() {
-            var inputLink = document.getElementById('link-input').value;
-            if (inputLink.includes("aminoapps.com")) {
-                window.location.href = "http://aminoapps.com/invite/YKC5F53I2E";
-            } else {
-                alert("O seu link não é válido.");
-            }
-        }
-    </script>
+    <script src="scripts/request.js"></script>
 </body>
 </html>
