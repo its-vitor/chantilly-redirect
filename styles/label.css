@@ -1,0 +1,96 @@
+:root{
+    --color: #3c6c91
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito;
+    color: var(--color);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--color), #12212d);
+}
+
+#label-redirect{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#img-source{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#button-redirect{
+    text-decoration: none;
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: transform 0.3s;
+    border: none;
+}
+
+#button-redirect:hover{
+    transform: scale(1.05);
+}
+
+input{
+    width: 250px;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    display: block;
+}
+
+input::placeholder {
+    color: var(--color);
+    font-size: 16px;
+}
+
+#label-button {
+    background-color: var(--color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    text-align: center;
+}
+
+#label-button h3 {
+    color: white;
+    padding-bottom: 10px;
+}
