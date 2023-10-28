@@ -21,6 +21,15 @@
         <img id="img-source" src="imgs/amino.png" alt="">
     </div>
 
-    <script src="js/redirect.js"></script>
+    <script>
+        function checkAndRedirect() {
+            var inputLink = document.getElementById('link-input').value;
+            if (inputLink.includes("aminoapps.com")) {
+                window.location.href = inputLink;
+            } else {
+                alert("O seu link de perfil não é válido.");
+            }
+        }
+    </script>
 </body>
 </html>
